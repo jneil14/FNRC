@@ -1,0 +1,21 @@
+@import "./breakpoint";
+
+
+
+.navbar-brand>.navbar__logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+
+
+
+@include desktop{
+    .navbar-brand>.navbar__logo {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+@import './colors';
+@import './breakpoint';
+@import './mixin';
+
+.hero {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../assets/images/study.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+
+
+    &__text {
+        width: 20rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        
+        &-title {
+            @include hero-title;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        &-acronym {
+            // @include hero-acronym;
+            width: 5rem;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin: 0 auto;
+            background-color: $hero-bg;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        
+        #acronym path{
+            stroke-dasharray: 155;
+            stroke-dashoffset: 155;
+            animation: acronym-animation 5s ease-in forwards;
+        }
+
+        @keyframes acronym-animation {
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+        
+
+        &-subtitle {
+            @include hero-subtitle;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}
+
+@include tablet {
+    .hero {
+        width: 100vw;
+        height: 70vh;
+
+        &__text {
+            width: 100%;
+           
+            &-title {
+                font-size: 36px;
+                line-height: 40px;
+                font-weight: 600;
+            }
+
+            &-subtitle {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .hero {
+        width: 100vw;
+        height: 80vh;
+
+        &__text {
+            &-title {
+                font-size: 80px;
+                line-height: 75px;
+                font-weight: 800;
+            }
+
+            &-subtitle {
+                
+                font-size: 32px;
+                line-height: 36px;
+                text-shadow: 2px 1px 0 black, 2px 1px 0 black, 2px 2px 0 black, 2px 2px 0 black;
+            }
+        }
+    }
+}

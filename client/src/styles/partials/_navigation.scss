@@ -1,0 +1,58 @@
+@import './breakpoint';
+@import './colors';
+
+.nav {
+    width: 100vw;
+    height: 15vh;
+    
+    background-color: green;
+
+    &__logo {
+        margin: auto;
+        display: block;
+        padding-top: 10px;
+    }
+    &__logo-image {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        
+    }
+
+    &__navbar {
+        // display: flex;
+        // justify-content: space-between;
+        height: 3rem;
+        // width: 100vw;
+        // height: 100%;
+        
+
+    }
+    .nav.nav-pills {
+        height: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+    a.nav-link.active {
+        color: red;
+        width: 100%;
+        // height: 100%;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 5px;
+    }
+    .dropdown.nav-item {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 0;
+    }
+    .nav-item {
+        font-size: 12px;
+        line-height: 14px;
+        // height: 3rem;
+        padding: 0;
+
+    }
+}
+

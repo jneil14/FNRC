@@ -1,0 +1,53 @@
+@import './breakpoint';
+
+
+.d-block {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+// end of mobile
+
+
+@include tablet {
+    .d-block {
+        width: 70vw;
+        height: 30rem;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        filter: invert(80%);
+        opacity: 80%;
+    }
+}
+//end of tablet
+
+
+@include desktop {
+    .d-block {
+        height: 50rem;
+        border-radius: 5px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: -3rem;
+    }
+}
+// end of desktop
+
+
+@include extra-large {
+    .d-block {
+        height: 60rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: -5rem;
+    }
+}

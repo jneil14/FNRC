@@ -1,0 +1,24 @@
+@import './partials/breakpoint';
+@import './partials/navigation';
+@import './partials/navigationBar';
+@import './partials/hero';
+@import './partials/about';
+@import './partials/carouselImages';
+@import './partials/services';
+@import './partials/contact';
+@import './partials/mixin';
+
+
+@import './partials/colors';
+
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
