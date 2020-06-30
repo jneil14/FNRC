@@ -275,14 +275,13 @@
 
 .about__text-title {
   font-family: Habibi;
-  color: black;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 1rem;
 }
 
 .about__text-para {
-  font-family: Habibi;
+  font-family: K2D-Regular;
   font-size: 14px;
   line-height: 16px;
   text-align: justify;
@@ -393,6 +392,220 @@
   .carousel-control-next,
   .carousel-control-prev {
     margin: -5rem;
+  }
+}
+
+@font-face {
+  font-family: Galada;
+  src: url(../assets/fonts/Galada/Galada-Regular.ttf);
+}
+
+@font-face {
+  font-family: Habibi;
+  src: url(../assets/fonts/Habibi/Habibi-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kadwa-Regular;
+  src: url(../assets/fonts/Kadwa/Kadwa-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kadwa_Bold;
+  src: url(../assets/fonts/Kadwa/Kadwa-Bold.ttf);
+}
+
+@font-face {
+  font-family: K2D-Regular;
+  src: url(../assets/fonts/K2D/K2D-Regular.ttf);
+}
+
+@font-face {
+  font-family: K2D-Medium;
+  src: url(../assets/fonts/K2D/K2D-Medium.ttf);
+}
+
+@font-face {
+  font-family: K2D-Bold;
+  src: url(../assets/fonts/K2D/K2D-Bold.ttf);
+}
+
+.services {
+  margin: 32px 0;
+}
+
+.services__title {
+  font-family: Habibi;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.services__info-odd {
+  background-color: #354148;
+  color: white;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.services__info-odd-name {
+  font-family: K2D-Medium;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.services__info-odd-description {
+  font-family: K2D-Regular;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+}
+
+.services__info-odd span.services__info-odd-description--bold {
+  font-weight: 700;
+}
+
+.services__info-even {
+  background-color: #C4C4C4;
+  color: #354148;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.services__info-even-name {
+  font-family: K2D-Medium;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.services__info-even-description {
+  font-family: K2D-Regular;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+}
+
+.services__info-even span.services__info-even-description--bold {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    margin: 48px 0;
+  }
+  .services__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services__info-odd {
+    padding: 2rem;
+  }
+  .services__info-odd-name {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 2rem;
+  }
+  .services__info-odd-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .services__info-even {
+    padding: 2rem;
+  }
+  .services__info-even-name {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 2rem;
+  }
+  .services__info-even-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .services {
+    margin: 64px 0;
+  }
+  .services__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .services__info-odd {
+    padding: 5rem;
+  }
+  .services__info-odd-name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services__info-odd-description {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 5rem;
+  }
+  .services__info-even {
+    padding: 5rem;
+  }
+  .services__info-even-name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services__info-even-description {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .services {
+    margin: 80px 0;
+  }
+  .services__title {
+    font-size: 64px;
+    line-height: 68px;
+  }
+  .services__info-odd {
+    padding: 5rem;
+  }
+  .services__info-odd-name {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .services__info-odd-description {
+    font-size: 32px;
+    line-height: 36px;
+    padding: 5rem;
+  }
+  .services__info-even {
+    padding: 5rem;
+  }
+  .services__info-even-name {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .services__info-even-description {
+    font-size: 32px;
+    line-height: 36px;
+    padding: 5rem;
   }
 }
 

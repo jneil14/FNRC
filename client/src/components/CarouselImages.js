@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-bootstrap"; 
 import about1 from "../assets/images/about1.JPG";
 import about2 from "../assets/images/about2.JPG";

@@ -1,3 +1,4 @@
+@import './colors';
 
 @font-face {
     font-family: Galada;
@@ -67,16 +68,30 @@
 
 @mixin component-title {
     font-family: Habibi;
-    color: black;
     font-size: 24px;
     line-height: 28px;
+}
 
+@mixin component-subtitle {
+    font-family: K2D-Medium;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 @mixin component-paragraph {
-    font-family: Habibi;
+    font-family: K2D-Regular;
     font-size: 14px;
     line-height: 16px;
     text-align: justify;
+}
 
+@mixin services-odd {
+    background-color: $font-blue;
+    color: white;
+}
+
+@mixin services-even {
+    background-color: $font-gray;
+    color: $font-blue;
 }
