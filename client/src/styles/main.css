@@ -644,6 +644,191 @@
   src: url(../assets/fonts/K2D/K2D-Bold.ttf);
 }
 
+.contact__title {
+  font-family: Habibi;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 1rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__form-message {
+  height: 10rem;
+  border-radius: 5px;
+}
+
+.contact__btn {
+  margin-top: 2.5rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #354148;
+}
+
+.contact__btn:hover {
+  border-radius: 25px;
+  background-color: #658525;
+  font-weight: 500;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__title {
+    margin: 2rem;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .contact {
+    margin: 2rem;
+  }
+  .contact__form {
+    width: 75%;
+    display: flex column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__form-name, .contact__form-email, .contact__form-phone, .contact__form-message-textarea {
+    width: 60%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+  }
+  .contact__form-message {
+    width: 100%;
+    height: 5rem;
+    padding: 3px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+  }
+  .contact__btn {
+    margin-top: 3rem;
+    padding: 3px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact__title {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .contact {
+    margin: 2rem;
+  }
+  .contact__form {
+    width: 80%;
+  }
+  .contact__form-name, .contact__form-email, .contact__form-phone, .contact__form-message {
+    width: 60%;
+    font-size: 32px;
+    line-height: 36px;
+    padding: 5px;
+  }
+  .contact__form-message {
+    width: 80%;
+    height: 10rem;
+    padding: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+  }
+  .contact__btn {
+    margin-top: 5rem;
+    padding: 5px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .contact__title {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 70px;
+    line-height: 75px;
+  }
+  .contact {
+    margin: 5rem;
+  }
+  .contact__form {
+    width: 80%;
+  }
+  .contact__form-name, .contact__form-email, .contact__form-phone, .contact__form-message {
+    width: 60%;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 7px;
+  }
+  .contact__form-message {
+    width: 80%;
+    height: 15rem;
+    padding: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+  }
+  .contact__btn {
+    margin-top: 7rem;
+    padding: 7px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@font-face {
+  font-family: Galada;
+  src: url(../assets/fonts/Galada/Galada-Regular.ttf);
+}
+
+@font-face {
+  font-family: Habibi;
+  src: url(../assets/fonts/Habibi/Habibi-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kadwa-Regular;
+  src: url(../assets/fonts/Kadwa/Kadwa-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kadwa_Bold;
+  src: url(../assets/fonts/Kadwa/Kadwa-Bold.ttf);
+}
+
+@font-face {
+  font-family: K2D-Regular;
+  src: url(../assets/fonts/K2D/K2D-Regular.ttf);
+}
+
+@font-face {
+  font-family: K2D-Medium;
+  src: url(../assets/fonts/K2D/K2D-Medium.ttf);
+}
+
+@font-face {
+  font-family: K2D-Bold;
+  src: url(../assets/fonts/K2D/K2D-Bold.ttf);
+}
+
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
