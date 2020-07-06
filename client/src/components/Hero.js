@@ -8,7 +8,7 @@ export default function Hero() {
           <h2 className="hero__text-title">Footprints Nursing Review Center</h2>
           {/* <h2 className="hero__text-acronym">FNRC</h2> */}
 
-          <div className="hero__text-acronym">
+          {/* <div className="hero__text-acronym">
               
             <svg
               id="acronym"
@@ -43,7 +43,7 @@ export default function Hero() {
                 mask="url(#path-1-outside-1)"
               />
             </svg>
-          </div>
+          </div> */}
 
           <h3 className="hero__text-subtitle">
             Supporting IENs Transition into Canadian Nursing

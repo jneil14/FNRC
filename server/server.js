@@ -28,8 +28,8 @@ app.post('/api/form', (req, res) => {
         service:'Gmail',
         port: 465,
         auth:{
-            user: 'julianavenger@gmail.com',
-            pass: 'dzhongkitz'
+            user: 'footprintsnursing@gmail.com',
+            pass: 'marilee18'
       }
     });
 
@@ -46,7 +46,7 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
       from: data.email,
-      to: "julianavenger@gmail.com",
+      to: "footprintsnursing@gmail.com",
       replyTo: data.email,
       subject: `Message from ${data.name}`,
       html: htmlEmail 
