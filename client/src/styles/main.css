@@ -680,6 +680,7 @@
   background-color: #658525;
   font-weight: 500;
   border: none;
+  outline: none;
 }
 
 @media only screen and (min-width: 768px) {

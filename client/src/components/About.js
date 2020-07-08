@@ -4,7 +4,7 @@ import CarouselImages from './CarouselImages';
 function About() {
     return (
       <>
-        <div className="about">
+        <div className="about" id="about">
           <div className="about__text">
             <h2 className="about__text-title">Get to know us...</h2>
             <p className="about__text-para">

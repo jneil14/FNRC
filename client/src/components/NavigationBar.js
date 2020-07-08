@@ -7,14 +7,13 @@ export default function NavigationBar() {
       <>
         <div className="nav__container">
           <Navbar
-
             className="navbar"
             collapseOnSelect
             expand="md"
             bg="dark"
             variant="dark"
           >
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="about">
               <img className="navbar__logo" src={logo} alt="logo" />
             </Navbar.Brand>
 
@@ -25,18 +24,43 @@ export default function NavigationBar() {
                   <Nav.Link href="#about">ABOUT US</Nav.Link>
                   <NavDropdown title="SERVICES" id="collapsible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
-                      IELTS-RN
+                      <Nav.Link
+                        className="text-success"
+                        eventKey={3}
+                        href="#celban"
+                      >
+                        CELBAN
+                      </Nav.Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
-                      CELBAN
+                      <Nav.Link
+                        className="text-success"
+                        eventKey={4}
+                        href="#ncas"
+                      >
+                        NCAS-RN LPN
+                      </Nav.Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">NCAS</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.4">
-                      CPNRE
+                    <NavDropdown.Item href="#action/3.3">
+                      <Nav.Link
+                        className="text-success"
+                        eventKey={5}
+                        href="#nclex"
+                      >
+                        NCLEX-RN
+                      </Nav.Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
-                      Separated link
+                    <NavDropdown.Item
+                      className="text-success"
+                      href="#action/3.4"
+                    >
+                      <Nav.Link
+                        className="text-success"
+                        eventKey={6}
+                        href="#cpnre"
+                      >
+                        CPNRE
+                      </Nav.Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>

@@ -29,10 +29,11 @@ function Footer() {
                   <a
                     href="https://www.facebook.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="Facebook Page"
                     className="company__media-info-details-icon"
                   >
-                    <i class="fa fa-facebook-f"></i>
+                    <i className="fa fa-facebook-f"></i>
                   </a>
                 </div>
               </div>
@@ -43,6 +44,7 @@ function Footer() {
               <a
                 href="https://www.google.com/maps/place/379+Columbia+St,+New+Westminster,+BC+V3L+5T6/@49.2048622,-122.9073821,17z/data=!3m1!4b1!4m5!3m4!1s0x5485d872a07810df:0xa08e01d1d3ccdcaf!8m2!3d49.2048587!4d-122.9051934"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="company__address-text"
               >
                 379 Columbia St., New Westminster, B.C., V3L 5T6

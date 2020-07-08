@@ -46,10 +46,10 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
       from: data.email,
-      to: "footprintsnursing@gmail.com",
+      to: 'footprintsnursing@gmail.com',
       replyTo: data.email,
       subject: `Message from ${data.name}`,
-      html: htmlEmail 
+      html: htmlEmail
     };
 
 

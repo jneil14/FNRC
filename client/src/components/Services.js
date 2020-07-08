@@ -4,10 +4,10 @@ import React from 'react';
 function Services() {
     return (
       <>
-        <div className="services">
+        <div className="services" id="services">
           <h2 className="services__title">OUR SERVICES</h2>
 
-          <div className="services__info-odd">
+          <div className="services__info-odd" id="celban">
             <h3 className="services__info-odd-name">CELBAN</h3>
             <p className="services__info-odd-description">
               The{" "}
@@ -23,7 +23,7 @@ function Services() {
           </div>
           {/* end of CELBAN section */}
 
-          <div className="services__info-even">
+          <div className="services__info-even" id="ncas">
             <h3 className="services__info-even-name">NCAS-RN and LPN</h3>
             <p className="services__info-even-description">
               <span className="services__info-even-description--bold">
@@ -37,7 +37,7 @@ function Services() {
           </div>
           {/* end of NCAS-RN and LPN section */}
 
-          <div className="services__info-odd">
+          <div className="services__info-odd" id="nclex">
             <h3 className="services__info-odd-name">NCLEX-RN</h3>
             <p className="services__info-odd-description">
               All applicants seeking BCCNP registration must write and pass the{" "}
@@ -51,7 +51,7 @@ function Services() {
           </div>
           {/* end of NCLEX-RN*/}
 
-          <div className="services__info-even">
+          <div className="services__info-even" id="cpnre">
             <h3 className="services__info-even-name">CPNRE</h3>
             <p className="services__info-even-description">
               All applicants seeking BCCNP registration must write and pass the{" "}
