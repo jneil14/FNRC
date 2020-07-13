@@ -48,6 +48,9 @@
                         border-radius: 5px;
                         padding: 3%;
                     }
+                    &-icon:hover {
+                        background-color: white;
+                    }
                 }
             }
         }
@@ -88,7 +91,9 @@
     }
 
     .copyright {
-        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 // end of mobile

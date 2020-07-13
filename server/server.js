@@ -34,16 +34,6 @@ app.post('/api/form', (req, res) => {
     });
 
 
-    // let smtpTransport = nodemailer.createTransport({
-    //     service:'Gmail',
-    //     port: 465,
-    //     auth:{
-    //         user: 'julianavenger@gmail.com',
-    //         pass: 'dzhongkitz'
-    //     }
-    // });
-
-
     let mailOptions = {
       from: data.email,
       to: 'footprintsnursing@gmail.com',
@@ -63,8 +53,6 @@ app.post('/api/form', (req, res) => {
             console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
         }
     })
-
-    // transporter.close();
 
 })
 

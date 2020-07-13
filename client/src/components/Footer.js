@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
     return (
@@ -27,7 +27,7 @@ function Footer() {
                 <div className="company__media-info-details">
                   <h6 className="company__media-info-details-title">SOCIAL</h6>
                   <a
-                    href="https://www.facebook.com"
+                    href="https://m.facebook.com/footprintsnursingreviewcenter/"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Facebook Page"
@@ -58,7 +58,9 @@ function Footer() {
               className="map__frame"
             ></iframe>
           </div>
-          <p className="copyright">&copy; Copyright @2020</p>
+          <div className="copyright">
+            <p className="copyright">&copy; 2020 FNRC</p>
+          </div>
         </div>
       </>
     );

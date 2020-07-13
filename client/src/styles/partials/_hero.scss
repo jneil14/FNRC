@@ -7,7 +7,6 @@
     height: 30vh;
     background-image: url("../assets/images/study.jpg");
     background-repeat: no-repeat;
-    // background-size: cover;
     background-size: cover;
     object-fit: cover;
     opacity: 70%;
@@ -32,13 +31,11 @@
             font-weight: 500;
         }
         &-acronym {
-            // @include hero-acronym;
             width: 5rem;
             height: 8rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            // margin: 0 auto;
             background-color: $hero-bg;
             border: none;
             border-radius: 5px;
