@@ -1,183 +1,185 @@
-@import './breakpoint';
-@import './colors';
-@import './mixin';
-
+@import "./mixin";
+@import "./colors";
+@import "./breakpoint";
 
 .services {
-    margin: 32px 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
 
-    &__title {
-        @include component-title;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1.5rem;
+  &__title {
+    @include component-title;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+  }
+
+  &__info-odd {
+    @include services-odd;
+    margin-bottom: 0;
+    padding: 1rem;
+
+    &-name {
+      @include component-subtitle;
     }
 
-    &__info-odd {
-        @include services-odd;
-        margin-bottom: 0;
-        padding: 1rem;
-
-        &-name {
-            @include component-subtitle; 
-        }
-
-        &-description {
-            @include component-paragraph;
-            margin-bottom: 0;
-            padding-bottom: 1.5rem;
-        }
-
-        span.services__info-odd-description--bold {
-            font-weight: 700;
-        }
+    &-description {
+      @include component-paragraph;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem;
     }
 
-    &__info-even {
-        @include services-even;
-        margin-bottom: 0;
-        padding: 1rem;
-
-        &-name {
-            @include component-subtitle; 
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        &-description {
-            @include component-paragraph;
-            margin-bottom: 0;
-            padding-bottom: 1.5rem;
-        }
-
-        span.services__info-even-description--bold {
-            font-weight: 700;
-        }
+    span.services__info-odd-description--bold {
+      font-weight: 700;
     }
+  }
+
+  &__info-even {
+    @include services-even;
+    margin-bottom: 0;
+    padding: 1rem;
+
+    &-name {
+      @include component-subtitle;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-description {
+      @include component-paragraph;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem;
+    }
+
+    span.services__info-even-description--bold {
+      font-weight: 700;
+    }
+  }
 }
 // end of mobile
 
 @include tablet {
-    .services {
-        margin: 48px 0;
+  .services {
+    margin-top: 3rem;
+    margin-bottom: 0;
 
-        &__title {
-            font-size: 32px;
-            line-height: 36px;
-        }
-
-        &__info-odd {
-            padding: 2rem;
-
-            &-name {
-                font-size: 24px;
-                line-height: 32px;
-                margin-bottom: 2rem;
-            }
-
-            &-description {
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
-
-        &__info-even {
-            padding: 2rem;
-
-            &-name {
-                font-size: 24px;
-                line-height: 32px;
-                margin-bottom: 2rem;
-            }
-
-            &-description {
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
     }
+
+    &__info-odd {
+      padding: 2rem;
+
+      &-name {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 2rem;
+      }
+
+      &-description {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    &__info-even {
+      padding: 2rem;
+
+      &-name {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 2rem;
+      }
+
+      &-description {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 // end of tablet
 
 @include desktop {
-    .services {
-        margin: 64px 0;
+  .services {
+    margin-top: 4rem;
 
-        &__title {
-            font-size: 48px;
-            line-height: 52px;
-        }
-
-        &__info-odd {
-            padding: 5rem;
-
-            &-name {
-                font-size: 32px;
-                line-height: 36px;
-            }
-
-            &-description {
-                font-size: 24px;
-                line-height: 28px;
-                padding: 5rem;
-            }
-        }
-
-        &__info-even {
-            padding: 5rem;
-
-            &-name {
-                font-size: 32px;
-                line-height: 36px;
-            }
-
-            &-description {
-                font-size: 24px;
-                line-height: 28px;
-                padding: 5rem;
-            }
-        }
+    &__title {
+      font-size: 48px;
+      line-height: 52px;
     }
+
+    &__info-odd {
+      padding: 5rem;
+
+      &-name {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      &-description {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 5rem;
+      }
+    }
+
+    &__info-even {
+      padding: 5rem;
+
+      &-name {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      &-description {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 5rem;
+      }
+    }
+  }
 }
 // end of desktop
 
 @include extra-large {
-    .services {
-        margin: 80px 0;
+  .services {
+    margin-top: 5rem;
 
-        &__title {
-            font-size: 64px;
-            line-height: 68px;
-        }
-
-        &__info-odd {
-            padding: 5rem;
-
-            &-name {
-                font-size: 48px;
-                line-height: 52px;
-            }
-
-            &-description {
-                font-size: 32px;
-                line-height: 36px;
-                padding: 5rem;
-            }
-        }
-
-        &__info-even {
-            padding: 5rem;
-
-            &-name {
-                font-size: 48px;
-                line-height: 52px;
-            }
-
-            &-description {
-                font-size: 32px;
-                line-height: 36px;
-                padding: 5rem;
-            }
-        }
+    &__title {
+      font-size: 64px;
+      line-height: 68px;
     }
+
+    &__info-odd {
+      padding: 5rem;
+
+      &-name {
+        font-size: 48px;
+        line-height: 52px;
+      }
+
+      &-description {
+        font-size: 32px;
+        line-height: 36px;
+        padding: 5rem;
+      }
+    }
+
+    &__info-even {
+      padding: 5rem;
+
+      &-name {
+        font-size: 48px;
+        line-height: 52px;
+      }
+
+      &-description {
+        font-size: 32px;
+        line-height: 36px;
+        padding: 5rem;
+      }
+    }
+  }
 }

@@ -13,9 +13,9 @@ export default function NavigationBar() {
             bg="dark"
             variant="dark"
           >
-            <Nav.Link href="#hero"><Navbar.Brand>
+            <Navbar.Brand>
               <img className="navbar__logo" src={logo} alt="logo" />
-            </Navbar.Brand></Nav.Link>
+            </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -25,7 +25,7 @@ export default function NavigationBar() {
                   <NavDropdown title="SERVICES" id="collapsible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       <Nav.Link
-                        className="text-success padding='70%"
+                        className="text-success"
                         eventKey={3}
                         href="#celban"
                       >
