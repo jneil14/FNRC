@@ -21,6 +21,12 @@ function About() {
               Westminster, British Columbia just a few steps across Columbia
               Station.
             </p>
+            <p className="about__text-para">
+              Check out our other courses: {""}
+              <a target="blank" href="https://www.eurekacollege.ca">
+                https://www.eurekacollege.ca{" "}
+              </a>
+            </p>
           </div>
 
           <CarouselImages />

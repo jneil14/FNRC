@@ -1,101 +1,102 @@
-@import './colors';
-@import './breakpoint';
-@import './mixin';
+@import "./colors";
+@import "./breakpoint";
+@import "./mixin";
 
 .about {
-    margin: 1rem;
+  margin: 1rem;
+  height: 100%;
+  color: $font-blue;
+
+  &__text {
+    width: 100%;
     height: 100%;
-    color: black;
+    margin-bottom: 2rem;
 
-    &__text{
-        width: 100%;
-        height: 100%;
-        margin-bottom: 2rem;
-        
-
-        &-title {
-            @include component-title;
-            margin-bottom: 1rem;
-        }
-        &-para {
-            @include component-paragraph;
-            width: 100%;
-            margin-top: 15px;
-        }
+    &-title {
+      @include component-title;
+      margin-bottom: 1rem;
     }
+    &-para {
+      @include component-paragraph;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+  }
 }
 // end of mobile
 
 @include tablet {
-    .about {
-        margin: 2rem;
-        &__text {
-            margin-bottom: 3rem;
+  .about {
+    margin: 2rem;
+    &__text {
+      margin-bottom: 3rem;
 
-            &-title {
-                margin-bottom: 2rem;
-                font-size: 32px;
-                line-height: 36px;    
-            }
+      &-title {
+        margin-bottom: 2rem;
+        font-size: 32px;
+        line-height: 36px;
+      }
 
-            &-para {
-                width: 100%;
-                padding-left: 2rem;
-                font-size: 16px;
-                line-height: 18px;
-                margin-bottom: 2rem;
-            }
-        }
+      &-para {
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 2rem;
+      }
+
     }
+  }
 }
 // end of tablet
 
 @include desktop {
-    .about {
-        margin-left: 8rem;
-        margin-right: 8rem;
+  .about {
+    margin-left: 8rem;
+    margin-right: 8rem;
 
-        &__text {
-            margin-bottom: 5rem;
+    &__text {
+      margin-bottom: 5rem;
 
-            &-title {
-                font-size: 60px;
-                line-height: 65px;
-                margin-top: 5rem;
-                margin-bottom: 5rem;
-            }
+      &-title {
+        font-size: 60px;
+        line-height: 65px;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
 
-            &-para {
-                padding-left: 3rem;
-                font-size: 28px;
-                line-height: 32px;
-                margin-bottom: 3rem;
-            }
-        }
+      &-para {
+        padding-left: 3rem;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 3rem;
+      }
+
     }
+  }
 }
 // end of desktop
 
-
 @include extra-large {
-    .about {
-        margin-left: 10rem;
-        margin-right: 10rem;
+  .about {
+    margin-left: 10rem;
+    margin-right: 10rem;
 
-        &__text {
+    &__text {
+      &-title {
+        font-size: 70px;
+        line-height: 75px;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+      }
 
-            &-title {
-                font-size: 70px;
-                line-height: 75px;
-                margin-top: 7rem;
-                margin-bottom: 7rem;
-            }
+      &-para {
+        padding-left: 5rem;
+        font-size: 32px;
+        line-height: 36px;
+      }
 
-            &-para {
-                padding-left: 5rem;
-                font-size: 32px;
-                line-height: 36px;
-            }
-        }
     }
+  }
 }
