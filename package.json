@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "audit": "^0.0.6",
+    "concurrently": "^8.2.2",
+    "fix": "^0.0.3",
+    "npm": "^10.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.90.0"
+  },
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"nodemon server.js\"",
+    "build": "react-scripts build",
+    "postbuild": "react-snap",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "react-scripts": "^3.0.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "name": "fnrc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
